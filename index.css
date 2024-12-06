@@ -101,8 +101,15 @@ header{
     width: 55%;
     margin: 0 auto;
 }
-
-/* common-2 */
+/* comon */
+.comon{
+	height: max-content;
+}
+.comon img{
+	height: 550px !important;
+	width: 75%;
+}
+/* comon-2 */
 .comon-2 .main-head.animate__animated.animate__slideInLeft{
 	--animate-duration: 1.1s;
 }
@@ -320,6 +327,10 @@ header{
 	.carousel-caption p{
 		font-size: .9rem;
 	}
+	.comon img{
+		height: 500px !important;
+		width: 80% !important;
+	}
 	.hide-2{
 		display:none;
 	}
@@ -340,7 +351,7 @@ header{
 	}
 }
 
-@media screen and (width <= 768px){
+@media screen and (width < 768px){
 	.nav-icon img{
 		width: 80px;
 	}
@@ -357,6 +368,10 @@ header{
 	}
 	.carousel-caption p{
 		font-size: .7rem;
+	}
+	.comon img{
+		height: 550px !important;
+		width: 70% !important;
 	}
 	.comon-content{
 		padding-right: 4rem !important;
@@ -393,6 +408,10 @@ header{
 	}
 	.carousel-caption p{
 		font-size: .5rem;
+	}
+	.comon img{
+		height: 400px !important;
+		width: 80% !important;
 	}
 	.comon-content{
 		padding-right: 3rem !important;
