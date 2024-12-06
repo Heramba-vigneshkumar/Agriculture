@@ -1,19 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@100..700&family=Spicy+Rice&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 *{
 	margin:0;
 	padding:0;
-	/* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-	font-family: "Poppins", sans-serif;
-	font-weight: 500;
-	font-style: normal;
-	letter-spacing:.7px;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
 	scrollbar-width: none;
 }
 
 html,body{
+	font-family: "Parkinsans", serif;
+	font-optical-sizing: auto;
+	overflow-x: hidden;
 	width:100%;
 }
 
@@ -58,7 +53,7 @@ header{
 	right:10%;
 	opacity:0;
 	box-shadow: inset 1px 1px 10px black;
-	transition:top .3s ease-out;
+	transition:top .5s ease-out;
 }
 
 .visual-1{
@@ -72,9 +67,8 @@ header{
 }
 
 /* main */
-.main-img{
+.carousel-item img{
 	filter:brightness(50%);
-	z-index: -1;
 }
 
 .carousel-caption{
@@ -235,15 +229,24 @@ header{
  }
 
 /* about */
+.banner{
+	height: 250px;
+	position: relative;
+}
 .banner-img{
-    background: url(image/about.jpg) bottom;
-    background-size: cover;
-    filter: brightness(70%);
-    height: 250px;
-    width: 100%;
+    filter: brightness(50%);
+    height: 100%;
+	width: 100%;
 }
 
-.banner-img h1{
+.banner-caption{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.banner-caption h1{
     font-weight: 700;
     font-size: 3rem;
     color: white;
@@ -302,11 +305,20 @@ header{
 	.nav-link{
 		font-size: .7rem;
 	}
+	.drop-list-1{
+		right: 12% !important;
+		width: 102px;
+		font-size: .7rem;
+	}
+	.visual-1{
+		top: 50px;
+		z-index: 5 !important;
+	}
 	.carousel-caption h1{
 		font-size: 2rem;
 	}
 	.carousel-caption p{
-		font-size: 1rem;
+		font-size: .9rem;
 	}
 	.hide-2{
 		display:none;
@@ -333,7 +345,7 @@ header{
 		width: 80px;
 	}
 	.drop-list-1{
-		left: 17% !important;
+		right: 12% !important;
 		width: 100px;
 		font-size: .6rem;
 	}
@@ -344,7 +356,7 @@ header{
 		font-size: 1.5rem;
 	}
 	.carousel-caption p{
-		font-size: .5rem;
+		font-size: .7rem;
 	}
 	.comon-content{
 		padding-right: 4rem !important;
@@ -368,11 +380,19 @@ header{
 	.nav-icon img{
 		width: 60px;
 	}
+	.drop-list-1{
+		left: 24% !important;
+		width: 100px;
+		font-size: .6rem;
+	}
+	.visual-1{
+		top: 117px;
+	}
 	.carousel-caption h1{
-		font-size: 1.3rem;
+		font-size: 1rem;
 	}
 	.carousel-caption p{
-		font-size: .3rem;
+		font-size: .5rem;
 	}
 	.comon-content{
 		padding-right: 3rem !important;
